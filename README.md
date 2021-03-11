@@ -19,7 +19,7 @@ provides a solution to neatly display exported WAV/XML pairs of call recordings 
 ##### Python Dependencies:
    from this project's base directory run `pip install -r requirements.txt`
 ##### MYSQL
- - If you do not already have MYSQL installed use the following links to get started based on your OS:
+ - If you do not already have MYSQL installed use the following links to get started based on your OS:\
     [MYSQL for Windows](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/windows-installation.html)\
     [MYSQL for macOS](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/osx-installation.html)\
     [MYSQL for Linux](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/linux-installation.html)
