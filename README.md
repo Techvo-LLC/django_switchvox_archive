@@ -24,6 +24,6 @@ provides a solution to neatly display exported WAV/XML pairs of call recordings 
     [MySQL for macOS](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/osx-installation.html)\
     [MySQL for Linux](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/linux-installation.html)
  - Create your database:\
-   `mysql -u [user] -p`
-   `CREATE DATABASE [db name]`
+   `mysql -u [user] -p`\
+   `CREATE DATABASE [db name]`\
    `\q`
