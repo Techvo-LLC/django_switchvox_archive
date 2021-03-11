@@ -7,7 +7,7 @@ class recordings(models.Model):
     recording = models.URLField(_("recording"), max_length=500, unique=True)
     recording_tag = models.CharField(_("recording tag"), max_length=50)
     recorded_call_id = models.IntegerField(_("recorded call id"), unique=True, blank=False, null=False)
-    recorder_cid = models.CharField(_("recorded cid"), max_length=50,blank=True,null=True)
+    recorder_cid = models.CharField(_("recorder cid"), max_length=50,blank=True,null=True)
     recorded_cid = models.CharField(_("recorded cid"), max_length=50,blank=True,null=True)
     recorder_account_id = models.IntegerField(_("recorder account id"),blank=True,null=True)
     recorded_account_id = models.IntegerField(_("recorded account id"),blank=True,null=True)
@@ -23,6 +23,12 @@ class recordings(models.Model):
 
     def download_link(self):
         return mark_safe(f'<a href="{settings.MEDIA_URL}{self.recording}" target="download">Download Recording</a>')
+
+    def audio_player(self):
+        return mark_safe(f'<audio controls autoplay><source src="{settings.MEDIA_URL}{self.recording}" type="audio/wav"></audio>')
+    
+    download_link.short_description = "download"
+    audio_player.short_description = "listen"
 
     class Meta:
         db_table = 'recordings'
