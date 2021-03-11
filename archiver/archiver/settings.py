@@ -57,7 +57,7 @@ ROOT_URLCONF = 'archiver.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -133,6 +133,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # STATIC_ROOT= 'static'
-MEDIA_URL = '/recordings/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'recordings')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_DIR = (os.path.join(BASE_DIR, 'static'),)

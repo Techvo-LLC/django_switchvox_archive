@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
-
+from django.utils.html import mark_safe
+from archiver import settings
 # Create your models here.
 class recordings(models.Model):
     recording = models.URLField(_("recording"), max_length=500, unique=True)
@@ -19,6 +20,9 @@ class recordings(models.Model):
 
     def __str__(self):
         return str(self.recorded_call_id)
+
+    def download_link(self):
+        return mark_safe(f'<a href="{settings.MEDIA_URL}{self.recording}" target="download">Download Recording</a>')
 
     class Meta:
         db_table = 'recordings'
