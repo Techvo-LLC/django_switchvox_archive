@@ -46,7 +46,7 @@ provides a solution to neatly display exported WAV/XML pairs of call recordings 
    2. `python manage.py migrate` to tell django to use the collected information to create the database tables
    3. `python manage.py createsuperuser` to create your first user. Follow the on screen prompts
    4. The superuser creation does not prompt for first and last name so this next step will be required to access the user from the admin portal:
-     - `python manage.py shell`\
+     - `python manage.py shell`
        ```python
        from accounts.models import CustomUser as CU
        c = CU.objects.first()
@@ -55,4 +55,4 @@ provides a solution to neatly display exported WAV/XML pairs of call recordings 
        c.save()
        exit()
        ```
-        
+
