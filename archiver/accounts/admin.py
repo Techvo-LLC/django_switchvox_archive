@@ -25,6 +25,10 @@ class CustomUserAdmin(admin.ModelAdmin):
                 'email',
             )
         }),
+        ('Groups', {
+            "fields": ('groups',),
+            "classes": ('collapse',),
+        }),
         ('User Elevation', {
             "fields": (
                 'is_active',

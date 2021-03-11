@@ -13,4 +13,15 @@ class recordingsAdmin(admin.ModelAdmin):
         'to_caller_id',
         'date_created_ts',
     ]
-    
+    list_filter = [
+        'recording_tag',
+        'from_caller_id',
+        'to_caller_id',
+        'date_created_ts',
+    ]
+    search_fields = [
+        'recording_tag',
+        'from_caller_id',
+        'to_caller_id',
+        'date_created_ts',
+    ]
