@@ -60,6 +60,6 @@ provides a solution to neatly display exported WAV/XML pairs of call recordings 
     5. run the server `python manage.py runserver` and open your browser to [localhost:8000/admin](localhost:8000/admin)
     6. open another command prompt / terminal and navigate to the project directory.
     7. run watcher.py `python -m watcher`
-    8. find your xml/wav pairs and drop them into the recordings directory
+    8. find your xml/wav pairs and drop them into the media directory
       - The watcher will recurse through directories, so it is ok to copy folders and files alike. 
 
