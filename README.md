@@ -32,8 +32,8 @@ provides a solution to neatly display exported WAV/XML pairs of call recordings 
    \
   The following are a list of environment variables that will need to exist:
   - Database information should be set using the following variables
-    - archiver_db
-    - archiver_host
-    - archiver_user
-    - archiver_password
-    - archiver_port
+   - archiver_db
+   - archiver_host
+   - archiver_user
+   - archiver_password
+   - archiver_port
