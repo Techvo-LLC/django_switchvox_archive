@@ -37,3 +37,4 @@ provides a solution to neatly display exported WAV/XML pairs of call recordings 
     - archiver_user
     - archiver_password
     - archiver_port
+  - If you dislike the variables I use, you are welcome to change the names in settings.py and watcher.py to whatever you prefer :wink:
