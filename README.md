@@ -16,5 +16,5 @@ provides a solution to neatly display exported WAV/XML pairs of call recordings 
 #### Installation
  - Python can be installed in various ways. Follow the instructions found at [python.org](https://www.python.org/) for help installing and setting up Python for your OS.
  - Once Python is installed, use pip to install the dependencies found in requirements.txt
- - - from the base directory run `pip install -r requirements.txt`
+   - from the base directory run `pip install -r requirements.txt`
 
