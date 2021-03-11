@@ -59,5 +59,5 @@ provides a solution to neatly display exported WAV/XML pairs of call recordings 
     6. open another command prompt / terminal and navigate to the project directory.
     7. run watcher.py `python -m watcher`
     8. find your xml/wav pairs and drop them into the recordings directory
-      - The watcher will recurse through directories, so it is ok to copy folders and files alike into the recordings directory. 
+      - The watcher will recurse through directories, so it is ok to copy folders and files alike. 
 
