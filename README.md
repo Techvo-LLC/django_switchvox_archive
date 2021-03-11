@@ -16,8 +16,8 @@ provides a solution to neatly display exported WAV/XML pairs of call recordings 
 #### Installation
 ##### Python:
    Follow the instructions found at [python.org](https://www.python.org/) for help installing and setting up Python for your OS.
-##### Python Dependencies:
-   from this project's base directory run `pip install -r requirements.txt`
+ - Dependencies:\
+    from this project's base directory run `pip install -r requirements.txt`
 ##### MySQL
  - If you do not already have MySQL installed use the following links to get started based on your OS:\
     [MySQL for Windows](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/windows-installation.html)\
@@ -27,3 +27,13 @@ provides a solution to neatly display exported WAV/XML pairs of call recordings 
    `mysql -u [user] -p`\
    `CREATE DATABASE [db name]`\
    `\q`
+##### Environment variables
+  The project uses environment variables to collect sensitive information. If you are unsure how to set environment variables for your OS, take a look at [Twilio's helpful tips](https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html) or run a simple search on your favorite [search engine](https://duckduckgo.com/?q=set+environment+variables&t=h_&ia=web)\
+   \
+  The following are a list of environment variables that will need to exist:
+  - Database information should be set using the following variables
+  - - archiver_db
+  - - archiver_host
+  - - archiver_user
+  - - archiver_password
+  - - archiver_port
