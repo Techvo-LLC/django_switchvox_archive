@@ -20,6 +20,8 @@ provides a solution to neatly display exported WAV/XML pairs of call recordings 
     [MySQL for Windows](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/windows-installation.html)\
     [MySQL for macOS](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/osx-installation.html)\
     [MySQL for Linux](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/linux-installation.html)
+ - Start the MySQL service if it is not already running:\
+   `sudo service mysql start`
  - Create your database:\
    `mysql -u [user] -p`\
    `CREATE DATABASE [db name]`\
