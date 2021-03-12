@@ -5,6 +5,8 @@ from .models import recordings
 
 @admin.register(recordings)
 class recordingsAdmin(admin.ModelAdmin):
+    list_per_page = 25
+    list_max_show_all = 250
     
     list_display = [
         'recording_tag',
