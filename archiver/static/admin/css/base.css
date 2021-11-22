@@ -773,6 +773,7 @@ table#change-history tbody th {
     width: 260px;
     position: relative;
     margin-right: -300px;
+    background: #f8f8f8;
 }
 
 #footer {
@@ -876,10 +877,6 @@ table#change-history tbody th {
 }
 
 /* SIDEBAR */
-
-#content-related {
-    background: #f8f8f8;
-}
 
 #content-related .module {
     background: none;
