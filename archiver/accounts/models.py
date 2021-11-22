@@ -20,6 +20,4 @@ class CustomUser(AbstractUser):
 
     def full_name(self):
         full_name = "{0} {1}".format(self.first_name, self.last_name)
-        return full_name
-
-    
+        return full_name    
